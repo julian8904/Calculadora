@@ -1,0 +1,74 @@
+
+
+body{
+    min-height: 100vh;
+    background:url("fondo2.avif") no-repeat center center fixed;
+    background-size: cover;
+    display:grid;
+    justify-content: center;
+    place-items: center;
+
+}
+
+
+.calculadora {
+    background: rgba(233, 230, 230, 0.3);
+    border-radius:  5px;
+    backdrop-filter:blur(1px) ;
+    color: rgb(255, 255, 255);
+    display: 	grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    height: 700px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 0.5rem;
+}
+
+.btn{font-size: 35px;
+    background: rgb(9,9,9,0.6);
+    backdrop-filter: blur(300px) ;
+}
+
+.pantalla {
+    grid-column: 1 /-1;
+    padding: 1.5 rem;
+    background: rgb(9,9,9,0.6);
+    backdrop-filter: blur(300px) ;
+    font-size: 3rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+.btn {
+    color: antiquewhite;
+    border: 0;
+    padding: 1.5rem .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(38, 228, 228) ;
+
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background: rgba(17, 27, 168, 0.6);
+    backdrop-filter: blur(300px) ;
+}
+
+#igual:hover {
+    background-color: rgb(8, 5, 148);
+}
